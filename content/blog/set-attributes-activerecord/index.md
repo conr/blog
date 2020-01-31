@@ -12,16 +12,18 @@ In this post, I'd like to bring his blogpost up-to-date for Rails 6.
 
 ## Cheat Sheet
 
-| Method                | Default Accessor | Saved to DB | Validations | Callbacks | Touches `updated_at` | Readonly check | Depreciated |
-| --------------------  |:----------------:| -----------:| -----------:| ---------:| --------------------:| --------------:| -----------:|
-| `attribue(s)=`        | Yes              | No          | -           | -         | -                    | -              | No
-| `write_attribute`     | No               | No          | -           | -         | -                    | -              | No
-| `assign_attributes`   | Yes              | No          | -           | -         | -                    | -              | No
-| `update_attribute`    | Yes              | Yes         | No          | Yes       | Yes                  | Yes            | No
-| `update_attributes`   | Yes              | Yes         | Yes         | Yes       | Yes                  | Yes            | Yes (as of Rails 6)
-| `update`              | Yes              | Yes         | Yes         | Yes       | Yes                  | Yes            | No
-| `update_column(s)`    | Yes              | Yes         | No          | No        | No                   | Yes            | No
-| `User::update`        | Yes              | Yes         | Yes         | Yes       | Yes                  | Yes            | No
-| `User::update_all`    | No               | Yes         | No          | No        | No                   | No             | No
-| `User::insert(_all)`  | No               | Yes         | No          | No        | No                   | No             | No
-| `User::upsert(_all)`  | No               | Yes         | No          | No        | No                   | No             | No
+| Method                | Default Accessor | Saved to DB | Validations | Callbacks | Touches `updated_at` | Readonly check |
+| --------------------  |:----------------:| -----------:| -----------:| ---------:| --------------------:| --------------:|
+| `attribue(s)=`        | Yes              | No          | -           | -         | -                    | -              |
+| `write_attribute`     | No               | No          | -           | -         | -                    | -              |
+| `assign_attributes`   | Yes              | No          | -           | -         | -                    | -              |
+| `update_attribute`    | Yes              | Yes         | No          | Yes       | Yes                  | Yes            |
+| `update_attributes`   | Yes              | Yes         | Yes         | Yes       | Yes                  | Yes            |
+| `update`              | Yes              | Yes         | Yes         | Yes       | Yes                  | Yes            |
+| `update_column(s)`    | Yes              | Yes         | No          | No        | No                   | Yes            |
+| `User::update`        | Yes              | Yes         | Yes         | Yes       | Yes                  | Yes            |
+| `User::update_all`    | No               | Yes         | No          | No        | No                   | No             |
+| `User::insert(_all)`  | No               | Yes         | No          | No        | No                   | No             |
+| `User::upsert(_all)`  | No               | Yes         | No          | No        | No                   | No             |
+
+As of Rails 6, `update_attributes` has been depreciated in favour of `update`.
