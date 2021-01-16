@@ -1,5 +1,5 @@
 ---
-title: 5 Examples of Software Engineering Terms Explained
+title: 5 Terms Explained in the Context of Software Engineering
 date: "2021-01-16T11:00:00.169Z"
 ---
 
