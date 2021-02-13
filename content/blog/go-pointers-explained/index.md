@@ -11,7 +11,7 @@ Let’s start with variables. So what exactly is a variable and what does it con
 
 Take the following example:
 
-`var x int = 1` (Replace with pretty doodle with arrows pointing to each part explaining what they are)
+![var](1.png "var x int = 1")
 
 The symbol `x` here is our variable of type int (short for integer), and it has been assigned a value of `1`.
 
@@ -26,8 +26,6 @@ For the scope of this post we won’t worry what `0xc00002c008` means exactly. J
 
 We can think of the variable x as being a locker in a highschool. The locker has a name (John’s locker), contents inside (history book), a type (small locker), and a specific location amongst all the other lockers in the school (locker 42 floor B).
 
-(Doodle of identical car park, one is highlighted)
-
 We can retrieve the address of any variable in Go by appending an ampersand to the variable:
 
 `fmt.Println(&x) // This will print 0xc00002c008, the address of variable x.`
@@ -36,7 +34,7 @@ This is where things get interesting. What if we assign a new variable `y` to th
 
 `var y *int = &x`
 
-What do you think we’ll get if we were to print `y` now? Well we’ll simply get `0xc00002c008`, the same as if we printed `&x` which makes sense as that is just what we assigned `y` to. But what’s with the funky `*int` type of variable `y`? *int denotes the type as a pointer, specifically an integer pointer i.e. that which ‘points to’ an int value in memory.
+What do you think we’ll get if we were to print `y` now? Well we’ll simply get `0xc00002c008`, the same as if we printed `&x` which makes sense as that is just what we assigned `y` to. But what’s with the funky `*int` type of variable `y`? `*int` denotes the type as a pointer, specifically an integer pointer i.e. that which ‘points to’ an int value in memory.
 
 If we had another integer variable `z` with a value of `2` and assigned `y` to `&z`, `y` would now point to `z` and would evaluate to the address of variable `z`. We can then say `y` is a pointer to `z` i.e. `y` references `z`.
 
@@ -76,6 +74,8 @@ func zeroInt(val int) {
 So what do you think this program will print? `0` or `1`? The answer is `1` and we’ll see why in a moment.
 
 Before we explain why, know that when this program starts, it will start a goroutine which roughly translates to an independent path of execution in our program (a single thread essentially). Each goroutine will get its own stack of available memory and with each function call, a new frame will be added to that stack.
+
+![stack](2.png "stack")
 
 So when this program runs, a frame will be added when `main()` is called and another when `zeroInt` is called. Each frame is isolated from the other meaning that they cannot interact with what is outside of itself. This has the benefits of safety as variables between frames won’t end up getting changed unexpectedly. When we call `zeroInt(x)` we’re not actually passing `x` to the function; we’re making _a copy_ of `x` and then setting that copy to `0`. This is why our program prints out `1` instead of `0`. We never changed `x`, only the copy of it. The downsides of this are that we’re using up more space on the stack, and cannot mutate the actual variable we want to mutate between function calls. Note that each goroutine has limited stack space. Use too much and you’ll get a nasty error - stack overflow.
 
