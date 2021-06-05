@@ -122,4 +122,4 @@ In order to mitigate the issue we just mentioned, the Go compiler will copy vari
 
 The tradeoff here is that storing data on the heap vs. stack leads to more work for the garbage collector which may lead to performance issues. The details of which are beyond the scope of this piece but may be the topic of a future blog post.
 
-To summarize this post we have looked at what pointers are, why they might be useful, the tradeoffs of using them, and the touched upon stack vs. heap memory allocation. If you’ve made it this far into the post, thank you for reading and I hope the information contained within was useful to you!
+To summarize this post we have looked at what pointers are, why they might be useful, the tradeoffs of using them, and touched upon stack vs. heap memory allocation. If you’ve made it this far into the post, thank you for reading and I hope the information contained within was useful to you!
