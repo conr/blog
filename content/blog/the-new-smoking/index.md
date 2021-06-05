@@ -1,7 +1,7 @@
 ---
 title: The New Smoking
-date: "2020-06-06T13:41:00.169Z"
-description: Some thoughts on habit forming technology usage
+date: "2021-06-06T13:41:00.169Z"
+description: Some thoughts on habit forming technology.
 ---
 
 Strolling down South Richmond street on a long summer's evening, I approach two chefs standing silently in a doorway beside a Sushi restaurant. Each holding a cigarette in their left hand pointed towards the street catching the setting Sun's warm orange light, while in the shadow of the doorway, their right hands each grip a smartphone shining a cold sterile white glow a few inches from each of their faces. Neither lookup or seem to notice as I pass.
