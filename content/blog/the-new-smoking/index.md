@@ -4,7 +4,7 @@ date: "2021-06-06T13:41:00.169Z"
 description: Some thoughts on habit forming technology.
 ---
 
-Strolling down South Richmond street on a long summer's evening, I approach two chefs standing silently in a doorway beside a Sushi restaurant. Each holding a cigarette in their left hand, catching the setting Sun's warm orange light. Meanwhile in the shadow of the doorway, their right hands each grip a smartphone shining a cold sterile white glow a few inches from each of their faces. Neither lookup or seem to notice as I pass.
+Strolling down South Richmond street on a long summer's evening, I approach two chefs standing silently in a doorway beside a Sushi restaurant. Each holds a cigarette in their left hand, catching the setting Sun's warm orange light. Meanwhile in the shadow of the doorway, their right hands each grip a smartphone shining a cold sterile white glow a few inches from each of their faces. Neither lookup or seem to notice as I pass.
 
 Perhaps one or more of the many algorithmic feeds I subject myself to on a daily basis is fooling me of this, but I'm starting to believe a lot of the technology we engage with on a daily basis is doing us more harm than good.
 
