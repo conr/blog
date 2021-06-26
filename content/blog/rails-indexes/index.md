@@ -1,6 +1,6 @@
 ---
-title: When the index won't fit
-date: "2021-26-06T13:41:00.169Z"
+title: When the Index Won't Fit
+date: "2021-06-26T13:41:00.169Z"
 description: Indexing large columns of text
 ---
 
